@@ -1,0 +1,19 @@
+/* Widget: a47-statement — depends on a47-base.css */
+.a47-statement .a47-statement__text{font-family:var(--a47-head);font-weight:500;font-size:clamp(1.6rem,3.1vw,2.6rem);line-height:1.28;letter-spacing:-.03em;color:var(--a47-ink);margin-top:1.6rem;max-width:30em}
+.a47-statement .a47-statement__text mark{background:none;color:var(--a47-blue);font-family:var(--a47-serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.a47-statement .a47-statement__text .a47-muted{color:#9aa1bd}
+.a47-statement.a47-dark .a47-statement__text{color:#fff}
+.a47-statement.a47-dark .a47-statement__text mark{color:var(--a47-coral-2)}
+.a47-statement.a47-dark .a47-statement__text .a47-muted{color:#6f79a6}
+.a47-statement .a47-spectrum{margin-top:3rem;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.2rem}
+.a47-statement .a47-spectrum__end{font-family:var(--a47-head);font-weight:600;font-size:.95rem;line-height:1.3;letter-spacing:-.01em}
+.a47-statement .a47-spectrum__end small{display:block;font-family:var(--a47-body);font-weight:500;font-size:.75rem;color:var(--a47-muted);letter-spacing:.06em;text-transform:uppercase}
+.a47-statement .a47-spectrum__end:last-child{text-align:right}
+.a47-statement .a47-spectrum__bar{height:10px;border-radius:999px;background:linear-gradient(90deg,var(--a47-sky),var(--a47-blue) 55%,var(--a47-coral));position:relative}
+.a47-statement .a47-spectrum__bar i{position:absolute;top:50%;width:18px;height:18px;border-radius:50%;background:#fff;border:3px solid var(--a47-blue);transform:translate(-50%,-50%)}
+.a47-statement .a47-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
+.a47-statement .a47-pillar{display:flex;gap:1rem;align-items:flex-start;padding:1.4rem;border-radius:var(--a47-r);background:#fff;border:1px solid var(--a47-line)}
+.a47-statement .a47-pillar h3{font-family:var(--a47-head);font-size:1.15rem;margin-bottom:.25rem;color:var(--a47-ink)}
+.a47-statement .a47-pillar p{font-size:.92rem;color:var(--a47-muted);line-height:1.55}
+@media (max-width:980px){.a47-statement .a47-pillars{grid-template-columns:1fr}}
+@media (max-width:600px){.a47-statement .a47-spectrum{grid-template-columns:1fr 1fr}.a47-statement .a47-spectrum__bar{grid-column:1 / -1;order:3}}

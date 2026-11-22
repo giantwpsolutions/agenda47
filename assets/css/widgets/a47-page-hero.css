@@ -1,0 +1,16 @@
+/* Widget: a47-page-hero — depends on a47-base.css */
+.a47-page-hero{background:var(--a47-bg);overflow:hidden;padding:80px 0 90px}
+.a47-page-hero .a47-ph__grid{display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center;position:relative;z-index:2}
+.a47-page-hero.a47-page-hero--text .a47-ph__grid{grid-template-columns:1fr}
+.a47-page-hero .a47-crumbs{display:flex;gap:.5rem;align-items:center;font-size:.82rem;color:var(--a47-muted);margin-bottom:1.4rem;line-height:1.4}
+.a47-w .a47-crumbs__link:hover{color:var(--a47-blue)}
+.a47-page-hero .a47-ph__title{font-family:var(--a47-head);font-weight:600;font-size:clamp(2.6rem,5.4vw,4.6rem);line-height:1.03;letter-spacing:-.045em;margin:1.2rem 0 1.2rem;color:var(--a47-ink);max-width:15ch}
+.a47-page-hero .a47-ph__title em{font-family:var(--a47-serif);font-style:italic;font-weight:400;color:var(--a47-blue);letter-spacing:-.02em}
+.a47-page-hero .a47-ph__text{font-size:1.12rem;color:var(--a47-muted);max-width:56ch}
+.a47-page-hero .a47-ph__media{position:relative}
+.a47-page-hero .a47-ph__media img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:32px 120px 32px 32px;box-shadow:var(--a47-shadow)}
+.a47-page-hero .a47-ph__media::before{content:"";position:absolute;inset:auto -18px -18px auto;width:60%;height:60%;border-radius:32px;background:repeating-linear-gradient(135deg,rgba(43,76,255,.18) 0 2px,transparent 2px 10px);z-index:-1}
+.a47-page-hero .a47-ph__chip{position:absolute;left:-22px;bottom:28px;display:flex;align-items:center;gap:.7rem;background:#fff;padding:.8rem 1.1rem;border-radius:18px;box-shadow:0 24px 50px -20px rgba(14,24,71,.45);font-family:var(--a47-head);font-weight:600;font-size:.88rem;line-height:1.3;max-width:260px}
+.a47-page-hero .a47-ph__chip .a47-ic{width:40px;height:40px;border-radius:12px;background:var(--a47-coral);color:#fff}
+.a47-page-hero .a47-ph__chip .a47-ic svg{width:20px;height:20px}
+@media (max-width:980px){.a47-page-hero{padding:48px 0 70px}.a47-page-hero .a47-ph__grid{grid-template-columns:1fr;gap:3rem}.a47-page-hero .a47-ph__chip{left:10px}}

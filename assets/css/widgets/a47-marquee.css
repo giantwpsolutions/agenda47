@@ -1,0 +1,12 @@
+/* Widget: a47-marquee — depends on a47-base.css */
+.a47-marquee{overflow:hidden;padding:1.6rem 0;background:var(--a47-bg)}
+.a47-marquee .a47-marquee__band{background:var(--a47-ink);color:#fff;padding:1.4rem 0;width:104%;margin-left:-2%;transform:rotate(-1.2deg);overflow:hidden}
+.a47-marquee.a47-marquee--flat{padding:0}
+.a47-marquee.a47-marquee--flat .a47-marquee__band{transform:none;width:100%;margin-left:0}
+.a47-marquee .a47-marquee__track{display:flex;width:max-content;animation:a47Mq var(--a47-speed,45s) linear infinite}
+.a47-marquee:hover .a47-marquee__track{animation-play-state:paused}
+.a47-marquee .a47-marquee__list{display:flex;align-items:center;gap:2.4rem;padding-right:2.4rem;white-space:nowrap}
+.a47-marquee .a47-marquee__list li{display:inline-flex;align-items:center;gap:2.4rem;font-family:var(--a47-head);font-weight:600;font-size:1.5rem;letter-spacing:-.03em;line-height:1.2}
+.a47-marquee .a47-marquee__list li:nth-child(even){font-family:var(--a47-serif);font-style:italic;font-weight:400;color:var(--a47-coral-2);font-size:1.7rem;letter-spacing:0}
+.a47-marquee .a47-marquee__list li::after{content:"";width:10px;height:10px;border-radius:3px;background:var(--a47-blue);transform:rotate(45deg)}
+@keyframes a47Mq{to{transform:translateX(-50%)}}

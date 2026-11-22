@@ -1,0 +1,29 @@
+/* Widget: a47-bento — depends on a47-base.css */
+.a47-bento .a47-bento__grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.2rem}
+.a47-bento .a47-tile{position:relative;border-radius:28px;overflow:hidden;background:#fff;border:1px solid var(--a47-line);display:flex;flex-direction:column;min-height:300px;transition:transform .5s var(--a47-ease),box-shadow .5s}
+.a47-bento .a47-tile:hover{transform:translateY(-6px);box-shadow:var(--a47-shadow)}
+.a47-bento .a47-tile:nth-child(1){grid-column:span 7}
+.a47-bento .a47-tile:nth-child(2){grid-column:span 5}
+.a47-bento .a47-tile:nth-child(3){grid-column:span 5}
+.a47-bento .a47-tile:nth-child(4){grid-column:span 7}
+.a47-bento .a47-tile__img{height:210px;overflow:hidden}
+.a47-bento .a47-tile__img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--a47-ease)}
+.a47-bento .a47-tile:hover .a47-tile__img img{transform:scale(1.07)}
+.a47-bento .a47-tile__body{padding:1.6rem 1.7rem 1.8rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.a47-bento .a47-tile__num{font-family:var(--a47-serif);font-style:italic;font-size:1.3rem;color:var(--a47-coral);line-height:1}
+.a47-bento .a47-tile__title{font-family:var(--a47-head);font-size:1.55rem;color:var(--a47-ink)}
+.a47-bento .a47-tile p{font-size:.95rem;color:var(--a47-muted)}
+.a47-bento .a47-tile .a47-link{margin-top:auto;padding-top:.6rem}
+.a47-bento .a47-tile--dark{background:var(--a47-navy);border-color:transparent;color:#fff}
+.a47-bento .a47-tile--dark .a47-tile__title{color:#fff}
+.a47-bento .a47-tile--dark p{color:var(--a47-on-dark)}
+.a47-bento .a47-tile--dark .a47-link{color:var(--a47-coral-2)}
+.a47-bento .a47-tile--blue{background:var(--a47-blue);border-color:transparent;color:#fff}
+.a47-bento .a47-tile--blue .a47-tile__title{color:#fff}
+.a47-bento .a47-tile--blue p{color:#dfe5ff}
+.a47-bento .a47-tile--blue .a47-tile__num{color:var(--a47-sun)}
+.a47-bento .a47-tile--blue .a47-link{color:#fff}
+.a47-bento .a47-tile__art{position:absolute;right:-50px;bottom:-60px;width:260px;height:260px;color:rgba(255,255,255,.14);pointer-events:none}
+.a47-bento .a47-tile__art svg{width:100%;height:100%;stroke-width:.8}
+.a47-bento .a47-tile__body{position:relative;z-index:1}
+@media (max-width:980px){.a47-bento .a47-tile:nth-child(n){grid-column:span 12}}

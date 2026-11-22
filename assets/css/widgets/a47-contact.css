@@ -1,0 +1,38 @@
+/* Widget: a47-contact — depends on a47-base.css */
+.a47-contact .a47-contact__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:2rem;align-items:stretch}
+.a47-contact .a47-cinfo{position:relative;overflow:hidden;border-radius:32px;padding:2.6rem;background:var(--a47-navy);color:#fff;isolation:isolate;display:flex;flex-direction:column;gap:1.6rem}
+.a47-contact .a47-cinfo .a47-mesh{z-index:-1}
+.a47-contact .a47-cinfo__title{font-family:var(--a47-head);font-size:2rem;color:#fff;letter-spacing:-.035em}
+.a47-contact .a47-cinfo__title em{font-family:var(--a47-serif);font-style:italic;font-weight:400;color:var(--a47-coral-2)}
+.a47-contact .a47-cinfo>p{color:var(--a47-on-dark)}
+.a47-contact .a47-cinfo__list{display:grid;gap:.9rem}
+.a47-contact .a47-cinfo__item{display:flex;gap:.9rem;align-items:center;padding:1rem;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);line-height:1.4}
+.a47-contact .a47-cinfo__item .a47-ic{width:44px;height:44px;border-radius:14px;background:rgba(255,255,255,.1);color:#fff}
+.a47-contact .a47-cinfo__item .a47-ic svg{width:20px;height:20px}
+.a47-contact .a47-cinfo__item small{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#8d97c4}
+.a47-contact .a47-cinfo__item strong{font-weight:600;color:#fff}
+.a47-w .a47-cinfo__link:hover{color:var(--a47-coral-2)}
+.a47-contact .a47-cinfo__who{margin-top:auto}
+.a47-contact .a47-cinfo__who small{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#8d97c4;margin-bottom:.7rem}
+.a47-contact .a47-cinfo__who .a47-tag{background:rgba(255,255,255,.1);color:#fff}
+.a47-contact .a47-cform{border-radius:32px;padding:2.6rem;background:#fff;border:1px solid var(--a47-line);box-shadow:var(--a47-shadow)}
+.a47-contact .a47-cform__title{font-family:var(--a47-head);font-size:1.7rem;color:var(--a47-ink);letter-spacing:-.03em;margin-bottom:.4rem}
+.a47-contact .a47-cform__intro{color:var(--a47-muted);margin-bottom:1.8rem}
+.a47-contact .a47-frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.a47-contact .a47-field{display:block;margin:0 0 1rem;padding:0}
+.a47-contact .a47-field__label{display:block;font-family:var(--a47-head);font-weight:600;font-size:.8rem;color:var(--a47-ink);margin-bottom:.45rem;line-height:1.3}
+/* High specificity on purpose: beats Elementor kit form-field styles */
+html body .a47-w .a47-field .a47-field__input{width:100%;min-height:0;margin:0;padding:.95rem 1.05rem;border-radius:14px;border:1.5px solid #e1e5f2;background:var(--a47-ice);font-family:var(--a47-body);font-size:.97rem;line-height:1.5;color:var(--a47-ink);box-shadow:none;outline:0;transition:.25s}
+html body .a47-w .a47-field textarea.a47-field__input{min-height:150px;resize:vertical;display:block}
+html body .a47-w .a47-field select.a47-field__input{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230c1332' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:16px;padding-right:2.6rem}
+html body .a47-w .a47-field .a47-field__input:focus{border-color:var(--a47-blue);background-color:#fff;box-shadow:0 0 0 4px rgba(43,76,255,.12)}
+.a47-contact .a47-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.1rem 0 1.2rem}
+.a47-contact .a47-chip{position:relative;cursor:pointer}
+.a47-contact .a47-chip input{position:absolute;opacity:0;pointer-events:none}
+.a47-contact .a47-chip span{display:inline-block;padding:.55rem .95rem;border-radius:999px;border:1.5px solid #e1e5f2;background:#fff;font-size:.86rem;font-weight:500;line-height:1.3;color:var(--a47-ink);transition:.2s}
+.a47-contact .a47-chip input:checked+span{background:var(--a47-ink);border-color:var(--a47-ink);color:#fff}
+.a47-contact .a47-chip input:focus-visible+span{box-shadow:0 0 0 4px rgba(43,76,255,.2)}
+.a47-contact .a47-cform__msg{display:none;margin-top:1rem;padding:.9rem 1.1rem;border-radius:14px;background:var(--a47-sky);color:var(--a47-navy-2);font-weight:600;font-size:.92rem}
+.a47-contact .a47-cform__msg.is-on{display:block}
+@media (max-width:980px){.a47-contact .a47-contact__grid{grid-template-columns:1fr}}
+@media (max-width:600px){.a47-contact .a47-frow{grid-template-columns:1fr}.a47-contact .a47-cinfo,.a47-contact .a47-cform{padding:1.8rem}}

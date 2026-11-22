@@ -1,0 +1,12 @@
+/* Widget: a47-cta — depends on a47-base.css */
+.a47-cta .a47-cta__box{position:relative;overflow:hidden;border-radius:36px;padding:4.5rem;background:var(--a47-navy);color:#fff;display:grid;grid-template-columns:1.3fr auto;gap:2.5rem;align-items:center;isolation:isolate}
+.a47-cta .a47-cta__box .a47-mesh{z-index:-1}
+.a47-cta .a47-cta__box::after{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1.3px);background-size:22px 22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000)}
+.a47-cta .a47-cta__title{font-family:var(--a47-head);font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.04em;color:#fff}
+.a47-cta .a47-cta__title em{font-family:var(--a47-serif);font-style:italic;font-weight:400;color:var(--a47-coral-2);letter-spacing:-.01em}
+.a47-cta .a47-cta__text{color:var(--a47-on-dark);margin-top:.9rem;max-width:52ch}
+.a47-cta .a47-cta__actions{display:flex;flex-direction:column;gap:.8rem;align-items:flex-start}
+/* ghost button on the dark CTA box */
+.a47-cta .a47-btn--ghost,.a47-cta .a47-btn--ghost:focus{color:#fff;border-color:rgba(255,255,255,.28)}
+.a47-cta .a47-btn--ghost:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.4)}
+@media (max-width:980px){.a47-cta .a47-cta__box{grid-template-columns:1fr;padding:3rem 2rem}}

@@ -1,0 +1,24 @@
+/* Widget: a47-services — depends on a47-base.css */
+.a47-services{overflow:hidden}
+.a47-services .a47-container{z-index:2}
+.a47-services .a47-svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:28px;overflow:hidden}
+.a47-services .a47-svc{position:relative;padding:2.3rem 2rem 2.2rem;background:var(--a47-night);transition:background .4s;isolation:isolate;min-height:270px;display:flex;flex-direction:column}
+.a47-services .a47-svc::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 20% 0%,rgba(43,76,255,.45),transparent 60%);opacity:0;transition:opacity .5s}
+.a47-services .a47-svc:hover::before{opacity:1}
+.a47-services .a47-svc__top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2.2rem}
+.a47-services .a47-svc .a47-ic{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.12);transition:.4s}
+.a47-services .a47-svc:hover .a47-ic{background:var(--a47-coral);border-color:var(--a47-coral)}
+.a47-services .a47-svc__num{font-family:var(--a47-serif);font-style:italic;font-size:1.4rem;color:#6f79a6;line-height:1}
+.a47-services .a47-svc__title{font-family:var(--a47-head);font-size:1.45rem;color:#fff;margin-bottom:.6rem}
+.a47-services .a47-svc p{color:var(--a47-on-dark);font-size:.95rem}
+/* light skin */
+.a47-services.a47-services--light .a47-svc-grid{background:var(--a47-line);border-color:var(--a47-line)}
+.a47-services.a47-services--light .a47-svc{background:#fff}
+.a47-services.a47-services--light .a47-svc::before{background:radial-gradient(circle at 20% 0%,rgba(43,76,255,.12),transparent 60%)}
+.a47-services.a47-services--light .a47-svc .a47-ic{background:var(--a47-sky);color:var(--a47-blue);border-color:transparent}
+.a47-services.a47-services--light .a47-svc:hover .a47-ic{background:var(--a47-blue);color:#fff}
+.a47-services.a47-services--light .a47-svc__title{color:var(--a47-ink)}
+.a47-services.a47-services--light .a47-svc p{color:var(--a47-muted)}
+.a47-services.a47-services--light .a47-svc__num{color:#a4abc6}
+@media (max-width:980px){.a47-services .a47-svc-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.a47-services .a47-svc-grid{grid-template-columns:1fr}.a47-services .a47-svc{min-height:0}}

@@ -1,0 +1,19 @@
+/* Widget: a47-cards — depends on a47-base.css */
+.a47-cards .a47-cards__grid{display:grid;grid-template-columns:repeat(var(--a47-cols,3),1fr);gap:1.2rem}
+.a47-cards .a47-card{position:relative;padding:2rem 1.8rem;border-radius:var(--a47-r);background:#fff;border:1px solid var(--a47-line);transition:transform .45s var(--a47-ease),box-shadow .45s,border-color .45s;overflow:hidden}
+.a47-cards .a47-card:hover{transform:translateY(-6px);box-shadow:var(--a47-shadow);border-color:transparent}
+.a47-cards .a47-card .a47-ic{margin-bottom:1.6rem}
+.a47-cards .a47-card__num{position:absolute;right:1.4rem;top:1.2rem;font-family:var(--a47-serif);font-style:italic;font-size:1.25rem;color:#b3b9d3;line-height:1}
+.a47-cards .a47-card__title{font-family:var(--a47-head);font-size:1.25rem;color:var(--a47-ink);margin-bottom:.5rem}
+.a47-cards .a47-card p{font-size:.94rem;color:var(--a47-muted);line-height:1.6}
+.a47-cards .a47-card:nth-child(4n+2) .a47-ic{background:#ffe6e3;color:var(--a47-coral)}
+.a47-cards .a47-card:nth-child(4n+3) .a47-ic{background:#fff1d6;color:#c98a00}
+.a47-cards .a47-card:nth-child(4n+4) .a47-ic{background:#e1f6ee;color:#14946a}
+.a47-cards.a47-dark .a47-card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)}
+.a47-cards.a47-dark .a47-card:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.2)}
+.a47-cards.a47-dark .a47-card__title{color:#fff}
+.a47-cards.a47-dark .a47-card p{color:var(--a47-on-dark)}
+.a47-cards.a47-dark .a47-card .a47-ic{background:rgba(255,255,255,.08);color:#fff}
+.a47-cards .a47-container{z-index:2}
+@media (max-width:980px){.a47-cards .a47-cards__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.a47-cards .a47-cards__grid{grid-template-columns:1fr}}

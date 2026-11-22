@@ -1,0 +1,12 @@
+/* Widget: a47-split — depends on a47-base.css */
+.a47-split .a47-split__grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.a47-split.a47-split--reverse .a47-split__media{order:2}
+.a47-split .a47-split__media{position:relative}
+.a47-split .a47-split__media img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:32px;box-shadow:var(--a47-shadow)}
+.a47-split .a47-split__badge{position:absolute;right:-20px;bottom:-26px;background:var(--a47-ink);color:#fff;border-radius:22px;padding:1.2rem 1.4rem;max-width:260px;box-shadow:var(--a47-shadow)}
+.a47-split .a47-split__badge strong{display:block;font-family:var(--a47-serif);font-style:italic;font-weight:400;font-size:1.7rem;color:var(--a47-coral-2);line-height:1.1;margin-bottom:.3rem}
+.a47-split .a47-split__badge span{font-size:.85rem;color:var(--a47-on-dark);line-height:1.5;display:block}
+.a47-split .a47-checklist{display:grid;gap:.8rem;margin:1.6rem 0 2rem}
+.a47-split .a47-checklist li{display:flex;gap:.8rem;align-items:flex-start;font-weight:500;color:var(--a47-ink);line-height:1.5}
+.a47-split .a47-checklist li::before{content:"";flex:none;width:22px;height:22px;margin-top:1px;border-radius:50%;background:var(--a47-blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='m5 12 5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat}
+@media (max-width:980px){.a47-split .a47-split__grid{grid-template-columns:1fr;gap:3.5rem}.a47-split.a47-split--reverse .a47-split__media{order:0}.a47-split .a47-split__badge{right:10px}}
